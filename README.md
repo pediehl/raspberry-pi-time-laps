@@ -59,22 +59,21 @@ Verbinde dich per ssh und übertrage die Datei "**_zeitraffer.py_**"
 Einbinden der Datei per cron.
 
 ```
-Rechte des Scripts müssen natürlich stimmen,
+Rechte des Scripts müssen natürlich stimmen.
 
-sudo chmod 700 /home/pi/timelaps.sh
+sudo chmod 777 /home/pi/time-lapse.sh
 
-#sudo nano crontab -e
 sudo su
 nano /etc/crontab
 
-@reboot   root   /home/pi/timelaps.sh > /dev/null 2>&1
+@reboot   root   /home/pi/time-lapse.sh > /dev/null 2>&1
 
 sudo shutdown "now"
 ```
 
 
-### Einzelbilder zu einem Filmclip verwandeln
-Du kannst auch die einzelnen Standbilder zu einem Filmclip kombinieren. Dazu ist folgender Code notwendig:
+### Einzelbilder zu einem Videoclip verwandeln
+Du kannst auch die einzelnen Standbilder zu einem Videoclip kombinieren. Das geht lokal mit einer Videoschnitt-Programm. Wenn man das auf dem Raspberry machen möchte dazu ist folgender Code notwendig:
 
 ```
 cd /<your_timelapse_folder>
