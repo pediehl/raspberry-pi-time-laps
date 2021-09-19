@@ -53,15 +53,24 @@ raspi-config Kameramodul aktivieren Sicherheitsfrage
 
 raspi-config Kameramodul aktiviert
 
-### Ordner für Zeitraffer-Aufnahmen anlegen
 
-`mkdir zeitraffer`
+Verbinde dich per ssh und übertrage die Datei "**_zeitraffer.py_**"
 
-Verbinde dich per ssh und übetrage die Datei "**_zeitraffer.py_**"
+Einbinden der Datei per cron.
 
-cd Zeitraffer
+```
+Rechte des Scripts müssen natürlich stimmen,
 
-sudo apt-get install get
+sudo chmod 700 /home/pi/timelaps.sh
+
+#sudo nano crontab -e
+sudo su
+nano /etc/crontab
+
+@reboot   root   /home/pi/timelaps.sh > /dev/null 2>&1
+
+sudo shutdown "now"
+```
 
 
 ### Einzelbilder zu einem Filmclip verwandeln
