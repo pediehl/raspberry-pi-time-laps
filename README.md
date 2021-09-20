@@ -82,3 +82,5 @@ sudo apt-get install mencoder
 mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 -vf scale=1920:1080 -o timelapse.avi -mf type=jpeg:fps=24 mf://@list.txt
 
 ```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QSzAqc_NVhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
