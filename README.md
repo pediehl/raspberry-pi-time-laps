@@ -1,6 +1,6 @@
 # Zeitraffer-Aufnahmen mit dem Raspberry Pi machen
 
-Zeitraffer Aufnahmen (Timelapse) sehen eindrucksvoll aus – aber wie kann man sie möglichst einfach machen? Richtig! Mit dem Raspberry Pi. Alles was man dazubraucht ist ein Raspberry Pi, die Raspberry Pi Kamera, ein Batteriepack und eine Kaffeedose. Wie man den Raspberry Pi für solche Aufnahmen einsetzen kann, erklären wir in diesem Workshop.
+Zeitraffer Aufnahmen (Timelapse) sehen eindrucksvoll aus – aber wie kann man sie möglichst einfach machen? Richtig! Mit dem Raspberry Pi. Alles was man dazu braucht ist ein Raspberry Pi, die Raspberry Pi Kamera, ein Batteriepack und eine Kaffeedose. Wie man den Raspberry Pi für solche Aufnahmen einsetzen kann, erklären wir in diesem Workshop.
 
 ## Material
 
@@ -66,7 +66,7 @@ sudo chmod 777 /home/pi/time-lapse.sh
 sudo su
 nano /etc/crontab
 
-@reboot   root   /home/pi/time-lapse.sh > /dev/null 2>&1
+@reboot   pi   /home/pi/time-lapse.sh > /dev/null 2>&1
 
 sudo shutdown "now"
 ```
