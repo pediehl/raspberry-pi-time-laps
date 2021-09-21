@@ -35,7 +35,12 @@ Zunächst bringe dein System auf den aktuellen Stand:
 sudo apt-get update
 sudo apt-get upgrade
 ```
-Jetzt kann z.B. VNC per raspi-config aktiviert werden. Damit ist euer Raspberry Pi nun auch remote über die grafische Oberfläche erreichbar.
+
+### Rechner-Name
++ time-lapse1
++ time-lapse2
++ time-lapse3
++ usw.
 
 Wenn die Kamera installiert ist, können der Raspberry Pi und der Akku leicht aus der Dose gehoben werden, um Zugang zu den verschiedenen Anschlüssen zu erhalten. Ich finde, dass es beim Anschließen an ein Display und eine Tastatur leicht auf der Oberseite der Dose aufliegt, wenn Sie das Gerät mit einem Display verwenden müssen. SSH funktioniert ohne dass Sie es entfernen müssen, wenn eine Netzwerkverbindung verfügbar ist.
 
@@ -83,4 +88,4 @@ mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 
 
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QSzAqc_NVhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QSzAqc_NVhE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
